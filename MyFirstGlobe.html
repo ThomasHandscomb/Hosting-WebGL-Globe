@@ -110,8 +110,7 @@
   </div>
 
   <div id="currentInfo">
-     <span id="yearProdA" class="year">Product A</span>
-	 <span id="yearProdB" class="year">Product B</span>
+    <span id="yearYearA" class="year"></span>	 
   </div>
 
   <div id="title">
@@ -132,7 +131,7 @@
       Detector.addGetWebGLMessage();
     } else {
 
-      var years = ['ProdA','ProdB'];
+      var years = ['YearA'];
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
@@ -164,7 +163,7 @@
       
       
       xhr = new XMLHttpRequest();
-      xhr.open('GET', '/globe/MyFirstGlobeJason_Mod.json', true);
+      xhr.open('GET', '/globe/MyFirstGlobeJason.json', true);
       xhr.onreadystatechange = function(e) {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
